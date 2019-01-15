@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class JobInfoCtrl {
 
-    @RequestMapping(value="/jobinfo/detail",method = RequestMethod.POST,produces = "application/json")
+    @RequestMapping(value="/demo/jobinfo/detail",method = RequestMethod.POST,produces = "application/json")
     @ResponseBody
     String getInfo(@RequestBody JSONObject jsonParam) {
         return jsonParam.toJSONString();

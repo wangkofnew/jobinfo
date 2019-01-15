@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 @RestController
 public class TestCtrl {
 
-    @RequestMapping(value="/test",method = RequestMethod.GET)
+    @RequestMapping(value="/demo/test",method = RequestMethod.GET)
     @ResponseBody
     String getInfo(HttpServletRequest request) {
         return "OK";
