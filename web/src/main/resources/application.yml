@@ -1,0 +1,28 @@
+### 服务器配置
+server:
+  port: 8073
+
+logging:
+  config: classpath:logback-all.xml
+
+### spring配置
+spring:
+## 数据库配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://129.28.96.117:3306/job?useSSL=false&characterEncoding=utf-8
+    username: job
+    password: 1qaz@2wsx
+#    url: jdbc:mysql://127.0.0.1:3306/timo?useSSL=false&characterEncoding=utf-8
+#    username: wallet
+#    password: 1qaz@2wsx
+
+## jpa配置
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate.dialect: com.wjh.job.web.conf.MySQLDialectUTF8
+      hibernate.format_sql: false
+

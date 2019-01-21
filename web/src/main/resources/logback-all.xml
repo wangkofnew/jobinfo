@@ -29,14 +29,14 @@
             <charset>UTF-8</charset>
         </encoder>
     </appender>
-    <logger name="com.zhihu" level="debug"/>
+    <logger name="com.wjh" level="info"/>
     <logger name="org.eclipse.jetty.server.RequestLog" level="debug"/>
     <logger name="TZoneServer" level="debug"/>
     <logger name="jdbc.sqlonly" level="ERROR"/>
     <logger name="jdbc.resultset" level="ERROR"/>
     <logger name="jdbc.audit" level="ERROR"/>
 
-    <root level="debug">
+    <root level="info">
         <appender-ref ref="CONSOLE" />
         <appender-ref ref="TEST-FILE" />
     </root>
