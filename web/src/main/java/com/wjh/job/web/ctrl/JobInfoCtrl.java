@@ -20,9 +20,9 @@ public class JobInfoCtrl {
 
 
         Page<JobinfoDO> jobList =  (Page<JobinfoDO>)jobinfoDao.list(new JobinfoDO(),0,10000);
+        jobList.getContent();
 
-
-        return JSONObject.toJSONString(jobList);
+        return JSONObject.toJSONString(jobList.getContent());
     }
 }
 
